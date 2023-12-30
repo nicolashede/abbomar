@@ -1,0 +1,924 @@
+
+@font-face {
+    font-family: 'regular';
+    src: url('/fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'negrita';
+    src: url("../fonts/OpenSans-Bold.ttf");
+}
+  @font-face {
+    font-family: 'papu';
+    src: url('/fonts/OpenSans-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'semibold';
+    src: url('/fonts/OpenSans-SemiBold.ttf') format('truetype');
+    
+  }
+  @keyframes animacion1{
+    0%{
+        opacity: 0%;
+        
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes animacionColor{
+  0%{
+      background-color: rgba(0, 0, 0, 0.3);
+      color:#ededed
+      
+  }
+  100%{
+      background-color: #ededed;
+      color: #212529;
+  }
+ 
+}
+@keyframes animacionColor2{
+  0%{
+      background-color: rgba(255, 255, 255, 0.2);
+      color:#ededed
+      
+  }
+  100%{
+    background-color: rgba(242, 183, 5, 0.2);
+      color: #212529;
+  }
+ 
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family:regular;
+  }
+  
+  
+  header {
+    text-align: center;
+    position: relative; 
+    z-index: 1; 
+  }
+  
+ 
+
+header {
+  background-color: rgba(38, 35, 35, 0);
+  padding: .8em; /* Espaciado interno */
+  position: fixed; /* Fija el encabezado en la parte superior */
+  width: 100%; /* Ocupa todo el ancho */
+  z-index: 1000; /* Asegura que esté por encima del resto de contenido */
+  transition: height 0.3s ease; /* Transición suave al cambiar la altura */
+}
+
+/* Estilos para el logo */
+header img {
+  height: 110px; /* Tamaño inicial del logo */
+  transition: height 0.3s ease; /* Transición suave al cambiar el tamaño */
+  margin-right: 20%;
+}
+
+/* Cuando te desplazas hacia abajo, el logo se hace más pequeño */
+/* Cambia el tamaño del logo y/o otros estilos según tu preferencia */
+/* Puedes ajustar el valor del height para que se adapte a tu diseño */
+header.scrolled {
+  background-color: #212529; /* Cambia el color de fondo cuando se desplaza */
+  height: 90px; /* Cambia la altura del encabezado al desplazarse */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+header.scrolled #logo{
+  height: 60px; /* Tamaño más pequeño del logo al desplazarse */
+
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    display: inline-block; /* Permite centrar el menú */
+    margin: 0px; /* Ajusta el espacio a la derecha */
+    padding: 0px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    font-size: .8em;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    padding: 15px 10px;
+    color: white; /* Color del texto */
+    font-family: 'negrita', sans-serif;
+    
+  }
+  nav ul li a:hover {
+    text-decoration: none;
+    color: #c18f16;
+    
+  }
+  
+  /* Dropdown */
+  /* Dropdown */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+ 
+    display: none;
+    position: absolute;
+  
+    background-color: #212529;
+    width: 260px;
+    height: 110px;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+  font-size: 1.4em;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    transition: opacity .2s ease-out;
+    animation: animacion1 .3s forwards;
+
+    display: block;
+    left:-80px;
+    top:30px;
+  }
+  
+
+  /* Estilos para los botones con iconos */
+  .icon-buttons {
+    display: inline-block; /* Permite centrar los botones con iconos */
+    
+  }
+  
+  .icon-buttons a {
+    margin-left: 10px;
+    display: inline-block;
+  }
+  
+  .icon-buttons img {
+    height: 30px; /* Tamaño de los iconos */
+    width: auto;
+  }
+
+  li {
+    margin-left: 10px;
+  }
+  
+  /* Estilos para el texto superpuesto */
+.hero-text {
+    text-align: center;
+    color: #ffffff; /* Color del texto */
+    background-image: url('img/fabricacion-de-portaequipajes.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    max-height: 100vw;
+    height: 80vh;
+    
+  }
+  
+  .hero-text .fabrica-de {
+    padding-top: 3.5em;
+    font-size: 5em; /* Tamaño del texto más grande */
+    margin-bottom: 10px; /* Espaciado inferior */
+    
+  }
+  
+  .hero-text p {
+    font-size: 1.5em; /* Tamaño del texto más pequeño */
+    margin-bottom:2em;
+    
+  }
+
+  .hero-text a {
+    font-size: 1em; /* Tamaño del texto más pequeño */
+    margin:2em;
+    text-decoration: none;
+    padding: .9em 2em;
+  }
+  
+  .hero-text a:hover {
+    background-color: #631517;
+    color: #f2f2f2;
+  }
+
+  p {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 1.2em;
+  }
+
+  .fabrica-de {
+    font-family: 'papu', sans-serif;
+    font-size: 2.5em;
+    line-height: 1em;
+  }
+
+section{
+  width: 100%;
+}
+.article1{
+  padding:7em;
+  text-align: center;
+}
+.article1 p{
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 0 7em 0 7em;
+
+}
+.article1 h2{
+  font-size: 2em;
+
+}
+.article2 {
+ display: flex;
+  background-color: #f2f2f2;
+  padding: 5em;
+  justify-content: center;
+  align-items: center;
+
+}
+.texto-logo2{
+width: 65%;
+box-sizing: border-box;
+justify-content: center;
+padding: 2em 3em;
+
+}
+.logo2{
+  padding: 2em;
+  width: 35%;
+
+}
+.logo2 img{
+  justify-content: center;
+}
+.texto2{
+  color: grey ;
+  line-height: 1.5em;
+  padding-top: .5em;
+
+
+}
+
+
+.article3 {
+  display: flex;
+  padding: 0 2em;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+.card h3{
+ font-size: 1.2em;
+ font-family: negrita;
+}
+
+.article3 div {
+  width: 50%;
+  text-align: center;
+ }
+
+ .card {
+  width: 200px;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+  margin: .2em;
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease; /* Agrega una transición a la propiedad transform */
+}
+
+
+/* Cambia el tamaño de la card y la imagen al hacer hover */
+.card:hover {
+  transform: scale(1.03); /* Hace que la card sea un 10% más grande al hacer hover */
+}
+
+
+
+.tic{
+  margin:0 1em;
+}
+
+.nuestrosproductos h4{
+  font-size: 1.2em;
+  font-family: semibold;
+  margin-top: .5em;
+}
+.nuestrosproductos h2{
+  font-size: 1.7em;
+  text-align: left;
+}
+.taller{
+text-align: center;
+background-image: url(img/banner-abajo.png);
+background-size: cover;
+background-repeat:no-repeat ;
+padding: 2em 7em;
+margin-top: 7em;
+
+}
+.taller button{
+  text-align: center;
+  background-color:rgba(0,0,0,0.8);
+  text-transform: capitalize; 
+  padding: 1em 2em;
+  border-color: #ffffff;
+  font-family: semibold;
+}
+  .taller button img{
+    width: 1em;
+    margin-right: .5em;
+    
+}
+.taller p{
+  font-size: 1.3em;
+  margin: 3em;
+ 
+}
+.taller h2{
+  font-size: 2.5em;
+}
+
+footer {
+  background-color: #8a2529;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.bloque-redes {
+  display: flex;
+  justify-content: center;
+}
+
+.redes {
+  background-color: rgba(255, 255, 255, 0.2);
+  
+  border: none;
+  border-radius: 50%;
+  margin: 0 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.redes:hover {
+  animation: animacionColor2 .5s forwards;
+  }
+
+.redes img {
+  opacity: 100%;
+width: 40px;
+}
+
+#footer {
+  background: #212529;
+  border-top: 4px solid #212529;
+  font-size: 0.9em;
+  margin-top: 50px;
+
+  position: relative;
+  clear: both;
+}
+
+.boton-contactar{
+  display:inline-block;
+  width: 10em;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  font-family: semibold;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid #ededed;
+  
+}
+.boton-contactar:hover{
+ 
+  text-decoration: none;
+
+  animation: animacionColor .5s forwards;
+
+}
+.boton-contactar img{
+  width: 20px;
+  padding-right: 3px;
+  
+}
+.boton-contactar img:hover{
+  filter: brightness(0) invert(1);
+}
+/*------------------------------------------------------------------------*/
+
+
+@media screen and (max-width:1366px){
+  .hero-text{
+    height: 40em;
+  }
+  .hero-text .fabrica-de {
+    padding-top: 5em;
+    font-size: 4em; /* Tamaño del texto más grande */
+    margin-bottom: 10px; /* Espaciado inferior */
+  }
+  .hero-text p {
+    font-size: 1.2em; /* Tamaño del texto más pequeño */
+    margin-bottom:3em;
+    font-family: negrita;
+  }
+  .hero-text a {
+    font-size: .9em; /* Tamaño del texto más pequeño */
+    margin:em;
+    text-decoration: none;
+    padding: 1em 2em;
+  }
+  
+
+  .article1{
+    padding:3em;
+  }
+  .article1 p{
+    font-size: 1.3em;
+    line-height: 1.5em;
+    padding: 0.2em 3em;
+  
+  }
+  .article1 h2{
+    font-size: 2em;
+}
+.logo2 img{
+  padding: 0 2em;
+  justify-content: center;
+
+}
+.nuestrosproductos h2{
+  font-size: 1.5em;
+  text-align: center;
+}
+.nuestrosproductos h4{
+  font-size: 1em;
+  padding-top: .5em;
+  font-family: semibold;
+}
+
+.article2 {
+  display: inline-block;
+  background-color: #f2f2f2;
+  padding: 5em 0;
+  justify-content: center;
+  align-items: center;
+  
+}
+.texto-logo2{
+  width: 70%;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 2em 3em;
+
+}
+.logo2{
+  padding: 2em;
+  width: 60%;
+  vertical-align: middle;
+}
+.logo2 img{
+  justify-content: center;
+}
+.taller{
+  padding: 2em;
+  margin-top: 4em;
+  
+  }
+.taller p{
+  font-size: 1.2em;
+  margin: 1em;
+ 
+}
+
+
+.botones {
+  position: absolute;
+  bottom: 6%;
+  border-radius: 0px 0px 0px 0px;
+  z-index: 1; 
+  font-size: .8em;
+  padding:6px 10px;
+  cursor:pointer;
+} 
+
+.card h3{
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+  color: #ededed;
+  bottom: 20%;
+  font-size: 0.1em;
+  padding: 15px 20px;
+  width: 79%;
+}
+
+.article2 {
+  display: flex;
+  background-color: #f2f2f2;
+  padding: 5em 0;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.logo2{
+  padding: 2em;
+  width: 40%;
+  vertical-align: middle;
+}
+
+
+}
+/*------------------------------------------------------------------------*/
+
+
+@media screen and (max-width:570px){
+  .hero-text{
+    height: 50em;
+  }
+  .hero-text .fabrica-de {
+    padding-top: 5em;
+    font-size: 2.5em; /* Tamaño del texto más grande */
+    margin-bottom: 10px; /* Espaciado inferior */
+  }
+  .hero-text p {
+    font-size: 1em; /* Tamaño del texto más pequeño */
+    margin-bottom:2.5em;
+    font-family: negrita;
+  }
+  .hero-text a {
+    font-size: .9em; /* Tamaño del texto más pequeño */
+    margin:em;
+    text-decoration: none;
+    padding: 1em 2em;
+  }
+  .texto-logo2{
+    font-size:.8em ;
+    padding: .5em 1em;
+  }
+  section{
+    width: 100%;
+    padding: .5em;
+  }
+  .article1{
+    padding: 0 3em 0 2em;
+    margin: 1.5em 0;
+
+  }
+  
+  .article1 p{
+    font-size: 1em;
+    line-height: 1em;
+    padding: 0em;
+  
+  }
+  .article1 h2{
+    font-size: 1.5em;
+    line-height: 1.3em;
+  
+  }
+  .article2{
+    padding: 0em;
+  }
+.logo2{
+  padding: .5em;
+  margin: 1em;
+}
+.taller{
+  background-image: url(img/banner-abajo-cel.png);
+  background-size: cover;
+  background-repeat:no-repeat ;
+  padding: 1em;
+  margin-top: 4em;
+  
+  }
+  .taller button{
+    text-align: center;
+    background-color:rgba(0,0,0,0.8);
+    text-transform: capitalize; 
+    padding: 1em 2em;
+    border-color: #ffffff;
+    font-family: negrita;
+  }
+   
+  .taller p{
+    font-size: 1em;
+    margin: 1em;
+  }
+  .taller h2{
+    font-size: 1.5em;
+    line-height: 1.2em;
+    
+  }
+  
+
+}
+/*------------------------------------------------------------------------*/
+.color1{
+    background-color: #ededed ;
+}
+
+.color2{
+    background-color: #212529 ;
+}
+
+.titulo1{
+    color: #a12025;
+}
+
+.titulo2{
+    color: #212529 ;
+}
+.titulo3{
+    color: grey ;
+}
+
+.titulo4{
+  color: #ffffff;
+}
+.titulo5{
+  color: #f2b705;
+}
+.strong1{
+    font-family:papu;
+}
+.font1{
+  font-family:papu;
+}
+.font2{
+  font-family: negrita;
+}
+.font3{
+  font-family: semibold;
+}
+.font4{
+  font-family: regular;
+}
+
+
+.fondo1 {
+    background-color: #ffffff;
+}
+.fondo2 {
+    background-color: #ededed;
+}
+.fondo3 {
+    background-color: #212529;
+}
+.fondo4{
+    background-color: #ffbc1c;
+}
+.fondo5{
+    background-color: #c18f16;
+}
+.fondo6{
+    background-color: #a12025;
+}
+.fondo7{
+    background-color: #631517;
+}
+
+h2 {
+  line-height: 42px;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+.feature-box-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Espacio entre los elementos */
+}
+
+.icon-check {
+  color: #8a2529; /* Color del checkmark */
+  font-size: 24px; /* Tamaño del checkmark */
+  margin-right: 10px; /* Espacio entre el checkmark y el texto */
+}
+
+/* Opcional: Estilos para el círculo alrededor del checkmark */
+.icon-check::before {
+  content: '\2713'; /* Código Unicode del checkmark */
+  border-radius: 50%; /* Hace que el borde sea redondeado para formar un círculo */
+  border: 2px solid #8a2529; /* Color y grosor del borde */
+  display: inline-block;
+  width: 34px; /* Tamaño del círculo */
+  height: 34px; /* Tamaño del círculo */
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px; /* Espacio entre el checkmark y el texto */
+}
+.moveteloco {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+.nuestrosproductos {
+  margin-top: 150px;
+}
+
+
+/* Estilos para el texto "Nuestros clientes" */
+h2 {
+  text-align: center;
+}
+
+
+
+.ourclients {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width:500px;
+}
+
+.marronazo {
+  color: #212529;
+}
+
+
+.carrusel {
+  position: relative;
+  width: 500px; /* Ancho del carrusel */
+  overflow: hidden;
+  margin-right: 30px;
+}
+
+.logos {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.logo {
+  flex: 0 0 auto;
+  width: 125px; /* Tamaño de los logos */
+  padding: 5px;
+  overflow: hidden; /* Evitar que los logos se desborden */
+}
+
+.logo img {
+  width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  height: auto;
+}
+
+.flechita {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+}
+
+.anterior {
+  left: 0;
+}
+
+.siguiente {
+  right: 0;
+}
+
+.carrusel2 {
+  position: relative;
+  width: 500px; /* Ancho del carrusel */
+  overflow: hidden;
+}
+
+.logos2 {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+
+.anterior2 {
+  left: 0;
+}
+
+.siguiente2 {
+  right: 0;
+}
+
+.clientes {
+  display: flex;
+  margin-left: 180px;
+  margin-right: 180px;
+
+}
+
+.ourclients h2 {
+  font-size: 1.5em;
+  text-align:left;
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366; /* Color de fondo de WhatsApp */
+  border-radius: 50%; /* Hacer que el botón sea circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease;
+  z-index:1000;
+}
+
+.whatsapp-btn:hover {
+    filter: brightness(1.2); /* Modifica el brillo para hacerlo más amarillento */
+}
+
+.whatsapp-btn img {
+  width: 30px; /* Ajusta el tamaño del logotipo de WhatsApp */
+}
+
+html .text-color-light, html .text-light {
+  color: #FFF !important;
+}
+
+.textofooter {
+  color: #777;
+  line-height: 26px;
+  margin: 0 0 20px;
+}
+
+.card {
+  position: relative;
+padding: 10px;
+margin: 0;
+border: none;
+}
+.card h3{
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+  color: #ededed;
+  bottom: 20%;
+  font-size: 1em;
+  padding: 15px 20px;
+
+  
+}
+
+.botones {
+  position: absolute;
+  bottom: 11%;
+  border-radius: 0px 0px 0px 0px;
+  z-index: 1; 
+  font-size: .8em;
+  padding:6px 10px;
+  cursor:pointer;
+} 
+
+.botonwsp img {
+width: 22px;
+
+margin-right: 4px;
+}
+
+.botonwsp {
+  background-color: #631517;
+  width: 150px;
+padding:13px;
+font-size: 0.9em;
+text-align: center;
+vertical-align: center;
+
+}
+
+
+.experteanos img {
+  width: 21px;
+}
+
+.contactbtn {
+  padding:14px;
+}
