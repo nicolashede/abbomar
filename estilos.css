@@ -182,7 +182,19 @@ nav {
   li {
     margin-left: 10px;
   }
-  
+  /* Estilos para el botón hamburguesa */
+.hamburger-btn {
+  display: none; /* Inicialmente oculto en dispositivos grandes */
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
   /* Estilos para el texto superpuesto */
 .hero-text {
     text-align: center;
@@ -232,7 +244,27 @@ nav {
     font-size: 2.5em;
     line-height: 1em;
   }
+  /* Estilos para el texto superpuesto */
+  .hero-text2 {
+    text-align: center;
+    color: #ffffff; /* Color del texto */
+    background: url('img/portaequipajes-portaescaleras-para-utilitarios.jpg') no-repeat center center fixed;
+    background-size: cover;
 
+    background-attachment: fixed;
+    width: 100%;
+    max-height: 80vw;
+    height: 50vh;
+    
+  }
+  
+  .portaequipajes-y-portaescaleras {
+    padding-top: 7em;
+    font-size: 2em; /* Tamaño del texto más grande */
+    margin-bottom: 10px; /* Espaciado inferior */
+    
+  }
+  
 section{
   width: 100%;
 }
@@ -297,9 +329,8 @@ padding: 2em 3em;
 }
 .taller{
 text-align: center;
-background-image: url(img/banner-abajo.png);
+background: url(img/banner-abajo.png) no-repeat center center;
 background-size: cover;
-background-repeat:no-repeat ;
 padding: 3em 7em;
 margin-top: 7em;
 
@@ -832,8 +863,8 @@ font-family: regular;
   overflow: hidden;
 }
 }
-/* CAROUSEL troll --------------------------------------------------------------------------------------- */
-/* CAROUSEL troll --------------------------------------------------------------------------------------- */
+/*  --------------------------------------------------------------------------------------- */
+/*  --------------------------------------------------------------------------------------- */
 @media screen and (max-width:850px){
 .ourclients {
   margin-top: 2em;
@@ -916,6 +947,70 @@ font-family: regular;
   font-size: .8em;
   padding:7px 10px;
 } 
+/*-------------------------------------------------MENU HAMBURGUESA----------------------------------------------*/
+/* Oculta el logotipo y los enlaces de navegación en dispositivos pequeños */
+.icon-buttons, nav {
+  display: none;
+}
+#logo{
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Muestra el botón hamburguesa en dispositivos pequeños */
+.hamburger-btn {
+  display: block;
+  width: 60px;
+}
+
+/* Estilos adicionales para el menú desplegable en dispositivos pequeños */
+nav {
+  position: fixed;
+  top: 80px; /* Ajusta según el tamaño del encabezado */
+  right: 0;
+  width: 100%;
+  background-color: #212529;
+  z-index: 999;
+  text-align: center;
+  display: none; /* Inicialmente oculto */
+}
+nav ul {
+  display: block;
+  padding-inline-start: 0;
+}
+
+nav ul li {
+  display: block;
+  margin: 10px 0;
+}
+
+nav ul li a {
+  font-size: 1.5em;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+.dropdown-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.dropdown-content {
+  display: block;
+  position: relative;
+  background-color:#323538;
+  width: 100%;
+  height: auto; /* Ajusta según tus necesidades */
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+
+  animation:none;
+  display: block;
+  left:0px;
+    top:0px;
+}
 }
 /*---------------------------------------------------MEDIA QUERY CELULAR-----------------------------------------------------*/
 /*---------------------------------------------------MEDIA QUERY CELULAR-----------------------------------------------------*/
@@ -1168,9 +1263,8 @@ font-family: regular;
     padding-bottom: 15px!important;
   }
   .titulo3{
-    font-size: 1em!important;
-    line-height: 1.3em!important;
-    padding-bottom: 15px!important;
+    font-size: 10em!important;
+   
   }
 }
 /*--------------------------------------------------------------------------------------------------------------------------------------------- */

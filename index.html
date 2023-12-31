@@ -12,7 +12,8 @@
 <body>
   
 <header>
-    <h1 class="d-none">Abbomar</h1>
+    <h1 class="d-none">Abbomar Herrería en Caseros Portaequipajes y Portaescaleras</h1>
+      <button class="hamburger-btn">&#9776;</button>
     
       <a href="#" > 
         <img id="logo" src="img/abbomar.png" alt="Abbomar">
@@ -22,7 +23,7 @@
       <nav>
         <ul>
           <li><a href="index.html">INICIO</a></li>
-          <li class="dropdown">
+          <li class="dropdown dropdown-container">
             <a href="#" class="dropbtn">PRODUCTOS</a>
           
             <div class="dropdown-content">
@@ -35,13 +36,13 @@
           <li><a href="contacto.html">CONTACTO</a></li>
         </ul>
       </nav>
-      
-      <!-- Botones adicionales con iconos -->
       <div class="icon-buttons">
         <a href="tel:+541151013019"><img src="img/iconos/telefono.png" alt="Telefono"></a>
         <a href="https://www.facebook.com/marcelo.abbondandolo.7"><img src="img/iconos/facebook.png" alt="Facebook"></a>
         <a href="https://wa.me/5491151013019" target="_"><img src="img/iconos/whatsapp.png" alt="WhatsApp"></a>
       </div>
+      
+      <!-- Botones adicionales con iconos -->
 </header>
 
 <a href="https://wa.me/5491151013019" target="_blank" class="whatsapp-btn">
@@ -443,6 +444,19 @@ avanzarAutomaticamente2(); // Iniciar el avance automático para el segundo carr
 
 </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $(".hamburger-btn").click(function() {
+      $("nav").slideToggle(); // Muestra u oculta el menú desplegable al hacer clic en el botón hamburguesa
+    });
+  });
   
+    $(document).ready(function () {
+        $("#productos-btn").click(function () {
+            $(".dropdown-content").slideToggle(); // Muestra u oculta el dropdown al hacer clic en "PRODUCTOS"
+        });
+    });
+</script>
 </body>
 </html>
