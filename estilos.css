@@ -120,7 +120,7 @@ nav {
   nav ul li a {
     text-decoration: none;
     padding: 15px 10px;
-    color: white; /* Color del texto */
+    color: white;
     font-family: 'negrita', sans-serif;
     
   }
@@ -282,41 +282,6 @@ padding: 2em 3em;
 }
 
 
-.article3 {
-  display: flex;
-  padding: 0 2em;
-  justify-content: space-around;
-  align-items: center;
- 
-}
-.card h3{
- font-size: 1.2em;
- font-family: negrita;
-}
-
-.article3 div {
-  width: 50%;
-  text-align: center;
- }
-
- .card {
-  width: 200px;
-  height: auto;
-  text-align: center;
-  padding: 20px;
-  margin: .2em;
-  border: 1px solid #ddd;
-  transition: transform 0.3s ease; /* Agrega una transición a la propiedad transform */
-}
-
-
-/* Cambia el tamaño de la card y la imagen al hacer hover */
-.card:hover {
-  transform: scale(1.03); /* Hace que la card sea un 10% más grande al hacer hover */
-}
-
-
-
 .tic{
   margin:0 1em;
 }
@@ -447,12 +412,12 @@ h2 {
   right: 20px;
   width: 60px;
   height: 60px;
-  background-color: #25d366; /* Color de fondo de WhatsApp */
-  border-radius: 50%; /* Hacer que el botón sea circular */
+  background-color: #25d366; 
+  border-radius: 50%; 
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   transition: transform 0.3s ease;
   z-index:1000;
 }
@@ -462,7 +427,7 @@ h2 {
 }
 
 .whatsapp-btn img {
-  width: 30px; /* Ajusta el tamaño del logotipo de WhatsApp */
+  width: 30px; 
 }
 
 html .text-color-light, html .text-light {
@@ -475,12 +440,26 @@ html .text-color-light, html .text-light {
   margin: 0 0 20px;
 }
 
+.article3 {
+  display: flex;
+  padding: 0 .3em;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+
 .card {
   position: relative;
 padding: 10px;
 margin: 0;
 border: none;
+transition: transform 0.3s ease;
+width: 30%;
 }
+.card:hover {
+  transform: scale(1.03); 
+}
+
 .card h3{
   position: absolute;
   background-color: rgba(0,0,0,0.8);
@@ -488,7 +467,7 @@ border: none;
   bottom: 20%;
   font-size: 1em;
   padding: 15px 20px;
-
+  font-family: negrita;
   
 }
 
@@ -526,7 +505,164 @@ vertical-align: center;
 .contactbtn {
   padding:14px;
 }
-/*------------------------------------------------------------------------*/
+
+.ourclients {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width:500px;
+}
+
+.marronazo {
+  color: #212529;
+}
+
+
+
+.carrusel {
+  position: relative;
+  width: 500px; 
+  overflow: hidden;
+  margin-right: 30px;
+}
+
+.logos {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.logo {
+  flex: 0 0 auto;
+  width: 125px; 
+  padding: 5px;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%; 
+  height: auto;
+}
+
+.flechita {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+}
+
+.anterior {
+  left: 0;
+}
+
+.siguiente {
+  right: 0;
+}
+
+.carrusel2 {
+  position: relative;
+  width: 500px; /* Ancho del carrusel */
+  overflow: hidden;
+}
+
+.logos2 {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+
+.anterior2 {
+  left: 0;
+}
+
+.siguiente2 {
+  right: 0;
+}
+
+.clientes {
+  display: flex;
+  margin-left: 130px;
+  margin-right: 10px;
+
+}
+
+.ourclients h2 {
+  font-size: 1.5em;
+  text-align:left;
+}
+
+.nuestrosproductos {
+  margin-top: 150px;
+}
+.color1{
+  background-color: #ededed ;
+}
+
+.color2{
+  background-color: #212529 ;
+}
+
+.titulo1{
+  color: #a12025;
+}
+
+.titulo2{
+  color: #212529 ;
+}
+.titulo3{
+  color: grey ;
+}
+
+.titulo4{
+color: #ffffff;
+}
+.titulo5{
+color: #f2b705;
+}
+.strong1{
+  font-family:papu;
+}
+.font1{
+font-family:papu;
+}
+.font2{
+font-family: negrita;
+}
+.font3{
+font-family: semibold;
+}
+.font4{
+font-family: regular;
+}
+
+
+.fondo1 {
+  background-color: #ffffff;
+}
+.fondo2 {
+  background-color: #ededed;
+}
+.fondo3 {
+  background-color: #212529;
+}
+.fondo4{
+  background-color: #ffbc1c;
+}
+.fondo5{
+  background-color: #c18f16;
+}
+.fondo6{
+  background-color: #a12025;
+}
+.fondo7{
+  background-color: #631517;
+}
+
+/*---------------------------------------------------MEDIA QUERY LAPTOP-----------------------------------------------------*/
+/*---------------------------------------------------MEDIA QUERY LAPTOP-----------------------------------------------------*/
+/*---------------------------------------------------MEDIA QUERY LAPTOP-----------------------------------------------------*/
+
 
 
 @media screen and (max-width:1366px){
@@ -612,31 +748,50 @@ vertical-align: center;
  
 }
 .boton-contactar{
-
   margin-bottom: 20px;
-  
-  
 }
 
-.botones {
-  position: absolute;
-  bottom: 6%;
-  border-radius: 0px 0px 0px 0px;
-  z-index: 1; 
-  font-size: .8em;
-  padding:6px 10px;
-  cursor:pointer;
-} 
+.card:hover {
+  transform: scale(1.03); /* Hace que la card sea un 10% más grande al hacer hover */
+}
 
+.article3 {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea */
+  padding: 0 .3em;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
 .card h3{
   position: absolute;
   background-color: rgba(0,0,0,0.8);
   color: #ededed;
   bottom: 20%;
-  font-size: 0.1em;
+  font-size: 1.2em;
   padding: 15px 20px;
-  width: 79%;
+  font-family: negrita;
+ }
+ 
+ 
+.card {
+  flex: 0 0 calc(33.333% - 15px); /* Utiliza flex para establecer el ancho deseado con un pequeño espacio entre las imágenes */
+  position: relative;
+  padding: 10px;
+  margin: 0;
+  border: none;
+  transition: transform 0.3s ease;
+  width: 33%;
 }
+
+.botones {
+  position: absolute;
+  bottom: 11%;
+  border-radius: 0px 0px 0px 0px;
+  font-size: 1em;
+  padding:10px 15px;
+  cursor:pointer;
+} 
 
 .article2 {
   display: flex;
@@ -653,118 +808,40 @@ vertical-align: center;
   vertical-align: middle;
 }
 
-
+.nuestrosproductos {
+  margin-top: 2.5em;
 }
-
-/*------------------------------------------------------------------------*/
-
 .ourclients {
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  width:500px;
+  margin-top: 2.5em;
 }
-
-.marronazo {
-  color: #212529;
-}
-
-
-
-.carrusel {
-  position: relative;
-  width: 500px; /* Ancho del carrusel */
-  overflow: hidden;
-  margin-right: 30px;
-}
-
-.logos {
-  display: flex;
-  transition: transform 0.3s ease;
-}
-
-.logo {
-  flex: 0 0 auto;
-  width: 125px; /* Tamaño de los logos */
-  padding: 5px;
-  overflow: hidden; /* Evitar que los logos se desborden */
-}
-
-.logo img {
-  width: 100%; /* Asegura que la imagen se ajuste al contenedor */
-  height: auto;
-}
-
-.flechita {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.5);
-  border: none;
-  cursor: pointer;
-}
-
-.anterior {
-  left: 0;
-}
-
-.siguiente {
-  right: 0;
-}
-
-.carrusel2 {
-  position: relative;
-  width: 500px; /* Ancho del carrusel */
-  overflow: hidden;
-}
-
-.logos2 {
-  display: flex;
-  transition: transform 0.3s ease;
-}
-
-
-.anterior2 {
-  left: 0;
-}
-
-.siguiente2 {
-  right: 0;
-}
-
 .clientes {
   display: flex;
-  margin-left: 180px;
-  margin-right: 180px;
+  margin-left: 50px;
+  margin-right: 0px;
 
 }
-
-.ourclients h2 {
-  font-size: 1.5em;
-  text-align:left;
-}
-
-
-@media screen and (max-width:480px){
-  
-  /* CAROUSEL AAAAAAAAAAAAA------------------------------------------------- */
-
-.ourclients {
-  margin-top: 2em;
-  
-  width:100%;
-}
-
-.marronazo {
-  color: #212529;
-}
-
-
 .carrusel {
   position: relative;
   width: 375px; /* Ancho del carrusel */
   overflow: hidden;
   margin-right: 30px;
+}
+.carrusel2 {
+  position: relative;
+  width: 375px; /* Ancho del carrusel */
+  overflow: hidden;
+}
+}
+/* CAROUSEL troll --------------------------------------------------------------------------------------- */
+/* CAROUSEL troll --------------------------------------------------------------------------------------- */
+@media screen and (max-width:850px){
+.ourclients {
+  margin-top: 2em;
+  width:100%;
+}
+.carrusel {
+  width: 500px; /* Ancho del carrusel */
+  margin-right: 25px;
 }
 
 .logos {
@@ -803,7 +880,7 @@ vertical-align: center;
 
 .carrusel2 {
   position: relative;
-  width: 375px; /* Ancho del carrusel */
+  width: 500px; /* Ancho del carrusel */
   overflow: hidden;
 }
 
@@ -823,18 +900,108 @@ vertical-align: center;
 
 .clientes {
   display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 50px;
+  margin-right: 0px;
 
 }
-
 .ourclients h2 {
-  font-size: 1em;
-  text-align:left;
+  font-size: 1.5em; 
 }
 
+.card h3{
+  font-size: 1em;
+  padding: 15px 20px;
+}
+.botones {
+  font-size: .8em;
+  padding:7px 10px;
+} 
+}
+/*---------------------------------------------------MEDIA QUERY CELULAR-----------------------------------------------------*/
+/*---------------------------------------------------MEDIA QUERY CELULAR-----------------------------------------------------*/
+/*---------------------------------------------------MEDIA QUERY CELULAR-----------------------------------------------------*/
 
-
+@media screen and (max-width:480px){
+  .ourclients {
+    margin-top: 1.5em;
+    
+    width:100%;
+  }
+  
+  .carrusel {
+    position: relative;
+    width: 375px; /* Ancho del carrusel */
+    overflow: hidden;
+    margin-right: 30px;
+  }
+  
+  .logos {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo {
+    flex: 0 0 auto;
+    width: 125px; /* Tamaño de los logos */
+    padding: 5px;
+    overflow: hidden; /* Evitar que los logos se desborden */
+  }
+  
+  .logo img {
+    width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    height: auto;
+  }
+  
+  .flechita {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .anterior {
+    left: 0;
+  }
+  
+  .siguiente {
+    right: 0;
+  }
+  
+  .carrusel2 {
+    position: relative;
+    width: 375px; /* Ancho del carrusel */
+    overflow: hidden;
+  }
+  
+  .logos2 {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .anterior2 {
+    left: 0;
+  }
+  
+  .siguiente2 {
+    right: 0;
+  }
+  
+  .clientes {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+  
+  }
+  
+  .ourclients h2 {
+    font-size: 1.2em;
+    text-align:left;
+    padding-left: 15px;
+  }
+  
 
 #footer {
   text-align: left;
@@ -953,73 +1120,60 @@ vertical-align: center;
     line-height: 1.2em;
     
   }
+  .article3 {
+    display: inline-block;
+    padding: 0 .3em;
+    justify-content: space-around;
+    align-items: center;
+   
+  }
+  .card h3{
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    color: #ededed;
+    bottom: 20%;
+    font-size: 1.2em;
+    padding: 15px 20px;
+    font-family: negrita;
+   }
+   
+   
+  .card {
+    position: relative;
+    padding: 10px;
+    margin: 0;
+    border: none;
+    transition: transform 0.3s ease;
+    width: 100%;
+  }
   
+  .botones {
+    font-size: .9em;
+    padding:10px 15px;
+  } 
 
+  .nuestrosproductos {
+    margin-top: 50px;
+  }
+  .nuestrosproductos h2{
+    margin-bottom: 0px !important;  
+  }
+  .nuestrosproductos h4{
+  
+    margin-top: 0em;
+  }
+  .texto1{
+    font-size: 1.2em!important;
+    line-height: 1.3em!important;
+    padding-bottom: 15px!important;
+  }
+  .titulo3{
+    font-size: 1em!important;
+    line-height: 1.3em!important;
+    padding-bottom: 15px!important;
+  }
 }
-/*------------------------------------------------------------------------*/
-.color1{
-    background-color: #ededed ;
-}
-
-.color2{
-    background-color: #212529 ;
-}
-
-.titulo1{
-    color: #a12025;
-}
-
-.titulo2{
-    color: #212529 ;
-}
-.titulo3{
-    color: grey ;
-}
-
-.titulo4{
-  color: #ffffff;
-}
-.titulo5{
-  color: #f2b705;
-}
-.strong1{
-    font-family:papu;
-}
-.font1{
-  font-family:papu;
-}
-.font2{
-  font-family: negrita;
-}
-.font3{
-  font-family: semibold;
-}
-.font4{
-  font-family: regular;
-}
-
-
-.fondo1 {
-    background-color: #ffffff;
-}
-.fondo2 {
-    background-color: #ededed;
-}
-.fondo3 {
-    background-color: #212529;
-}
-.fondo4{
-    background-color: #ffbc1c;
-}
-.fondo5{
-    background-color: #c18f16;
-}
-.fondo6{
-    background-color: #a12025;
-}
-.fondo7{
-    background-color: #631517;
-}
+/*--------------------------------------------------------------------------------------------------------------------------------------------- */
 
 h2 {
   line-height: 42px;
@@ -1044,11 +1198,11 @@ h2 {
   border-radius: 50%; /* Hace que el borde sea redondeado para formar un círculo */
   border: 2px solid #8a2529; /* Color y grosor del borde */
   display: inline-block;
-  width: 34px; /* Tamaño del círculo */
-  height: 34px; /* Tamaño del círculo */
+  width: 34px; 
+  height: 34px; 
   text-align: center;
   line-height: 30px;
-  margin-right: 10px; /* Espacio entre el checkmark y el texto */
+  margin-right: 10px; 
 }
 
 
@@ -1056,9 +1210,5 @@ h2 {
   text-align: center!important;
 }
 
-.nuestrosproductos {
-  margin-top: 150px;
-}
 
 
-/* Estilos para el texto "Nuestros clientes" */
