@@ -335,7 +335,7 @@ text-align: center;
 background-image: url(img/banner-abajo.png);
 background-size: cover;
 background-repeat:no-repeat ;
-padding: 2em 7em;
+padding: 3em 7em;
 margin-top: 7em;
 
 }
@@ -354,11 +354,11 @@ margin-top: 7em;
 }
 .taller p{
   font-size: 1.3em;
-  margin: 3em;
+  margin: 1.5 em 3em;
  
 }
 .taller h2{
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 footer {
@@ -429,6 +429,102 @@ width: 40px;
 }
 .boton-contactar img:hover{
   filter: brightness(0) invert(1);
+}
+
+.moveteloco {
+  text-align: left;
+}
+
+h2 {
+  text-align: center;
+}
+
+
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366; /* Color de fondo de WhatsApp */
+  border-radius: 50%; /* Hacer que el botón sea circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease;
+  z-index:1000;
+}
+
+.whatsapp-btn:hover {
+    filter: brightness(1.2); /* Modifica el brillo para hacerlo más amarillento */
+}
+
+.whatsapp-btn img {
+  width: 30px; /* Ajusta el tamaño del logotipo de WhatsApp */
+}
+
+html .text-color-light, html .text-light {
+  color: #FFF !important;
+}
+
+.textofooter {
+  color: #777;
+  line-height: 26px;
+  margin: 0 0 20px;
+}
+
+.card {
+  position: relative;
+padding: 10px;
+margin: 0;
+border: none;
+}
+.card h3{
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+  color: #ededed;
+  bottom: 20%;
+  font-size: 1em;
+  padding: 15px 20px;
+
+  
+}
+
+.botones {
+  position: absolute;
+  bottom: 11%;
+  border-radius: 0px 0px 0px 0px;
+  z-index: 1; 
+  font-size: .8em;
+  padding:6px 10px;
+  cursor:pointer;
+} 
+
+.botonwsp img {
+width: 22px;
+
+margin-right: 4px;
+}
+
+.botonwsp {
+  background-color: #631517;
+  width: 150px;
+padding:13px;
+font-size: 0.9em;
+text-align: center;
+vertical-align: center;
+
+}
+
+
+.experteanos img {
+  width: 21px;
+}
+
+.contactbtn {
+  padding:14px;
 }
 /*------------------------------------------------------------------------*/
 
@@ -515,7 +611,12 @@ width: 40px;
   margin: 1em;
  
 }
+.boton-contactar{
 
+  margin-bottom: 20px;
+  
+  
+}
 
 .botones {
   position: absolute;
@@ -554,10 +655,207 @@ width: 40px;
 
 
 }
+
 /*------------------------------------------------------------------------*/
 
+.ourclients {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width:500px;
+}
 
-@media screen and (max-width:570px){
+.marronazo {
+  color: #212529;
+}
+
+
+
+.carrusel {
+  position: relative;
+  width: 500px; /* Ancho del carrusel */
+  overflow: hidden;
+  margin-right: 30px;
+}
+
+.logos {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.logo {
+  flex: 0 0 auto;
+  width: 125px; /* Tamaño de los logos */
+  padding: 5px;
+  overflow: hidden; /* Evitar que los logos se desborden */
+}
+
+.logo img {
+  width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  height: auto;
+}
+
+.flechita {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+}
+
+.anterior {
+  left: 0;
+}
+
+.siguiente {
+  right: 0;
+}
+
+.carrusel2 {
+  position: relative;
+  width: 500px; /* Ancho del carrusel */
+  overflow: hidden;
+}
+
+.logos2 {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+
+.anterior2 {
+  left: 0;
+}
+
+.siguiente2 {
+  right: 0;
+}
+
+.clientes {
+  display: flex;
+  margin-left: 180px;
+  margin-right: 180px;
+
+}
+
+.ourclients h2 {
+  font-size: 1.5em;
+  text-align:left;
+}
+
+
+@media screen and (max-width:480px){
+  
+  /* CAROUSEL AAAAAAAAAAAAA------------------------------------------------- */
+
+.ourclients {
+  margin-top: 2em;
+  
+  width:100%;
+}
+
+.marronazo {
+  color: #212529;
+}
+
+
+.carrusel {
+  position: relative;
+  width: 375px; /* Ancho del carrusel */
+  overflow: hidden;
+  margin-right: 30px;
+}
+
+.logos {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.logo {
+  flex: 0 0 auto;
+  width: 125px; /* Tamaño de los logos */
+  padding: 5px;
+  overflow: hidden; /* Evitar que los logos se desborden */
+}
+
+.logo img {
+  width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  height: auto;
+}
+
+.flechita {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+}
+
+.anterior {
+  left: 0;
+}
+
+.siguiente {
+  right: 0;
+}
+
+.carrusel2 {
+  position: relative;
+  width: 375px; /* Ancho del carrusel */
+  overflow: hidden;
+}
+
+.logos2 {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+
+.anterior2 {
+  left: 0;
+}
+
+.siguiente2 {
+  right: 0;
+}
+
+.clientes {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.ourclients h2 {
+  font-size: 1em;
+  text-align:left;
+}
+
+
+
+
+#footer {
+  text-align: left;
+   display:list-item;
+   box-sizing: unset;
+   display: inline-block;
+}
+
+#footer .row{
+  display: inline-block;
+}
+
+
+.tdfooter {
+  margin-right: auto;
+  margin-left:auto;
+  text-align: left;
+  justify-content: center;
+  padding-left: 50px;
+  }
+
   .hero-text{
     height: 50em;
   }
@@ -581,16 +879,22 @@ width: 40px;
     font-size:.8em ;
     padding: .5em 1em;
   }
+
+  .logo2{
+    width: 100%;
+  }
+
   section{
     width: 100%;
-    padding: .5em;
   }
+
   .article1{
     padding: 0 3em 0 2em;
     margin: 1.5em 0;
-
   }
   
+
+
   .article1 p{
     font-size: 1em;
     line-height: 1em;
@@ -602,13 +906,26 @@ width: 40px;
     line-height: 1.3em;
   
   }
-  .article2{
-    padding: 0em;
+
+  .article2 {
+    display: block;
+    width: 100%;
+    margin:0px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  
   }
-.logo2{
-  padding: .5em;
-  margin: 1em;
-}
+  .texto-logo2{
+    width:100%;
+    text-align: center;
+  }
+
+  .moveteloco {
+    text-align: center;
+  }
+  
+
 .taller{
   background-image: url(img/banner-abajo-cel.png);
   background-size: cover;
@@ -624,6 +941,7 @@ width: 40px;
     padding: 1em 2em;
     border-color: #ffffff;
     font-family: negrita;
+    
   }
    
   .taller p{
@@ -732,9 +1050,7 @@ h2 {
   line-height: 30px;
   margin-right: 10px; /* Espacio entre el checkmark y el texto */
 }
-.moveteloco {
-  text-align: left;
-}
+
 
 .text-center {
   text-align: center!important;
@@ -746,179 +1062,3 @@ h2 {
 
 
 /* Estilos para el texto "Nuestros clientes" */
-h2 {
-  text-align: center;
-}
-
-
-
-.ourclients {
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  width:500px;
-}
-
-.marronazo {
-  color: #212529;
-}
-
-
-.carrusel {
-  position: relative;
-  width: 500px; /* Ancho del carrusel */
-  overflow: hidden;
-  margin-right: 30px;
-}
-
-.logos {
-  display: flex;
-  transition: transform 0.3s ease;
-}
-
-.logo {
-  flex: 0 0 auto;
-  width: 125px; /* Tamaño de los logos */
-  padding: 5px;
-  overflow: hidden; /* Evitar que los logos se desborden */
-}
-
-.logo img {
-  width: 100%; /* Asegura que la imagen se ajuste al contenedor */
-  height: auto;
-}
-
-.flechita {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.5);
-  border: none;
-  cursor: pointer;
-}
-
-.anterior {
-  left: 0;
-}
-
-.siguiente {
-  right: 0;
-}
-
-.carrusel2 {
-  position: relative;
-  width: 500px; /* Ancho del carrusel */
-  overflow: hidden;
-}
-
-.logos2 {
-  display: flex;
-  transition: transform 0.3s ease;
-}
-
-
-.anterior2 {
-  left: 0;
-}
-
-.siguiente2 {
-  right: 0;
-}
-
-.clientes {
-  display: flex;
-  margin-left: 180px;
-  margin-right: 180px;
-
-}
-
-.ourclients h2 {
-  font-size: 1.5em;
-  text-align:left;
-}
-
-.whatsapp-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  background-color: #25d366; /* Color de fondo de WhatsApp */
-  border-radius: 50%; /* Hacer que el botón sea circular */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  transition: transform 0.3s ease;
-  z-index:1000;
-}
-
-.whatsapp-btn:hover {
-    filter: brightness(1.2); /* Modifica el brillo para hacerlo más amarillento */
-}
-
-.whatsapp-btn img {
-  width: 30px; /* Ajusta el tamaño del logotipo de WhatsApp */
-}
-
-html .text-color-light, html .text-light {
-  color: #FFF !important;
-}
-
-.textofooter {
-  color: #777;
-  line-height: 26px;
-  margin: 0 0 20px;
-}
-
-.card {
-  position: relative;
-padding: 10px;
-margin: 0;
-border: none;
-}
-.card h3{
-  position: absolute;
-  background-color: rgba(0,0,0,0.8);
-  color: #ededed;
-  bottom: 20%;
-  font-size: 1em;
-  padding: 15px 20px;
-
-  
-}
-
-.botones {
-  position: absolute;
-  bottom: 11%;
-  border-radius: 0px 0px 0px 0px;
-  z-index: 1; 
-  font-size: .8em;
-  padding:6px 10px;
-  cursor:pointer;
-} 
-
-.botonwsp img {
-width: 22px;
-
-margin-right: 4px;
-}
-
-.botonwsp {
-  background-color: #631517;
-  width: 150px;
-padding:13px;
-font-size: 0.9em;
-text-align: center;
-vertical-align: center;
-
-}
-
-
-.experteanos img {
-  width: 21px;
-}
-
-.contactbtn {
-  padding:14px;
-}
