@@ -1,11 +1,9 @@
-
 @font-face {
     font-family: 'regular';
     src: url('fonts/OpenSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
-  
   @font-face {
     font-family: 'negrita';
     src: url("fonts/OpenSans-Bold.ttf");
@@ -23,8 +21,7 @@
   }
   @keyframes animacion1{
     0%{
-        opacity: 0%;
-        
+        opacity: 0%;  
     }
     100%{
         opacity: 100%;
@@ -34,13 +31,11 @@
   0%{
       background-color: rgba(0, 0, 0, 0.3);
       color:#ededed
-      
   }
   100%{
       background-color: #ededed;
       color: #212529;
   }
- 
 }
 @keyframes animacionColor2{
   0%{
@@ -59,15 +54,12 @@
     padding: 0;
     font-family:regular;
   }
-  
-  
   header {
     text-align: center;
     position: relative; 
     z-index: 1; 
   }
   
- 
 
 header {
   background-color: rgba(38, 35, 35, 0);
@@ -1140,6 +1132,8 @@ nav ul li a {
   .texto-logo2{
     font-size:.8em ;
     padding: .5em 1em;
+    width:100%;
+    text-align: center;
   }
 
   .logo2{
@@ -1178,9 +1172,8 @@ nav ul li a {
     padding: 0px;
   
   }
-  .texto-logo2{
-    width:100%;
-    text-align: center;
+  .titulo3{
+   font-size: 1.4em!important;
   }
 
   .moveteloco {
@@ -1262,10 +1255,7 @@ nav ul li a {
     line-height: 1.3em!important;
     padding-bottom: 15px!important;
   }
-  .titulo3{
-    font-size: 10em!important;
-   
-  }
+
 }
 /*--------------------------------------------------------------------------------------------------------------------------------------------- */
 
