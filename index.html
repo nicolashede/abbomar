@@ -53,7 +53,7 @@
               <h2 class="fabrica-de">FÁBRICA DE</h2>
               <p>Portaescaleras, Portaequipajes, Interior de Vehículos...</p>
               <div>
-                  <a href="#" class="fondo3 titulo4">Y MÁS</a>
+                  <a id="ymas" class="fondo3 titulo4">Y MÁS</a>
               </div>
           </div>
 
@@ -82,16 +82,17 @@
                   comprometido con brindar un excelente servicio. Durante el largo recorrido
                   profesional que tenemos, hemos sido merecedores del premio al cumplimiento y
                   a la producción.</p>
+                
                  <p class="texto2">Gracias a la fidelidad que han depositado miles de personas
                   en nosotros, estamos catalogados, hoy por hoy, como una herrería de obligada
                   referencia en la zona de Caseros.</p>
              </div>
-  
+             
           </article>
-          
+     
       </section>
-
-      <section>
+   
+      <section id="targetSection">
             <div class="col">
 							<h2 class="font-weight-normal mt-4">Nos dedicamos a la <strong class="strong1 titulo5">fabricación de</strong></h2>
 						</div>
@@ -262,7 +263,7 @@
               <h2 class="titulo4 mt-3 font-weight-bold">En nuestro taller de herrería, Abbomar S.A.</h2>
               <p class="titulo4">Tenemos como objetivo principal que los clientes queden totalmente satisfechos
                 con los productos que solicitan.</p>
-                <a href="https://wa.me/5491151013019" target="_blank" class="titulo4 button boton-contactar"> <img src="img/iconos/whatsapp-xxl.png" alt="contactar whatsapp"> contactar</a>
+                <a href="https://wa.me/5491151013019" target="_blank" class="titulo4 button boton-contactar"> <img src="img/iconos/whatsapp-xxl.png" alt="contactar whatsapp"> Contactar</a>
             </div>
             
           </div>
@@ -446,6 +447,20 @@ avanzarAutomaticamente2(); // Iniciar el avance automático para el segundo carr
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
+
+document.getElementById('ymas').addEventListener('click', function() {
+    const targetSection = document.getElementById('targetSection');
+    const offset = 115; // Cantidad de pixeles que quieres desplazarte por encima de la sección
+    const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - offset;
+
+    window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth' // Para una animación de desplazamiento suave
+    });
+});
+
+
+
   $(document).ready(function() {
     $(".hamburger-btn").click(function() {
       $("nav").slideToggle(); // Muestra u oculta el menú desplegable al hacer clic en el botón hamburguesa
