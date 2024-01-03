@@ -193,7 +193,7 @@ nav {
 .hero-text {
     text-align: center;
     color: #ffffff; /* Color del texto */
-    background-image: url('img/fabricacion-de-portaequipajes.jpg'); 
+    background-image: url('img/fabricacion-de-portaequipajes.webp'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -242,7 +242,7 @@ nav {
   .hero-text2 {
     text-align: center;
     color: #ffffff; /* Color del texto */
-    background: url('img/portaequipajes-portaescaleras-para-utilitarios.jpg') no-repeat center center fixed;
+    background: url('img/portaequipajes-portaescaleras-para-utilitarios.webp') no-repeat center center fixed;
     background-size: cover;
 
     background-attachment: fixed;
@@ -524,13 +524,24 @@ margin-right: 4px;
 }
 
 .botonwsp {
-  background-color: #631517;
+  background-color: #212529;
   width: 150px;
 padding:13px;
 font-size: 0.9em;
 text-align: center;
 vertical-align: center;
+border: none;
+border-color: #212529;
+color: white;
+font-family: negrita;
+border-radius: 5px;
+}
 
+.botonwsp:hover {
+  text-decoration: none;
+  background-color: #8a2529;
+  border-color: #212529;
+  color: white;
 }
 
 
@@ -763,6 +774,10 @@ margin-bottom: 10px;
   right: 20px;
 }
 
+.prev, .next {
+  padding:25px;
+}
+
 /* Estilos para ocultar la flecha derecha o izquierda si no hay más imágenes */
 .prev.disabled,
 .next.disabled {
@@ -967,7 +982,7 @@ ul li{
   width:100%;
 }
 .carrusel {
-  width: 100%; /* Ancho del carrusel */
+  width: 500px; /* Ancho del carrusel */
   margin-right: 25px;
 }
 
@@ -1007,7 +1022,7 @@ ul li{
 
 .carrusel2 {
   position: relative;
-  width: 100%; /* Ancho del carrusel */
+  width: 500px; /* Ancho del carrusel */
   overflow: hidden;
 }
 

@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
     <title>Abbomar - Herreria en caseros</title>
     <!-- CSS de Bootstrap 4 -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
             <ul>
               <li><a href="index.html">INICIO</a></li>
               <li class="dropdown dropdown-container">
-                <a href="#" class="dropbtn">PRODUCTOS</a>
+                <a class="dropbtn">PRODUCTOS</a>
               
                 <div class="dropdown-content">
                   <a href="portaequipajes.html">Portaequipajes y Portaescaleras</a>
@@ -57,9 +57,9 @@
                 <div class="row py-4">
                     <div class="col-lg-6" style="padding-top:0px !important">
 
-                        <h4 class="strong1 titulo2 h2 animate__animated animate__fadeInLeft appear-animation-visible" data-appear-animation="fadeInLeft" data-appear-animation-delay="200" style="animation-delay: 200ms;">CONTACTO</h4>
-                        <h4 class="pt-2 titulo2 animate__animated animate__fadeInLeft appear-animation-visible" data-appear-animation="fadeInLeft" data-appear-animation-delay="200" style="animation-delay: 200ms; font-family: negrita!important;"><strong>ABBOMAR</strong></h4>
-                        <p class="titulo3 animate__animated animate__fadeInLeft appear-animation-visible" data-appear-animation="fadeInLeft" data-appear-animation-delay="200" style="animation-delay: 200ms;">En nuestro taller de herrería, <strong class="strong1">Abbomar S.A.</strong>,
+                        <h4 class="strong1 titulo2 h2 animate__animated animate__fadeInLeft appear-animation-visible" data-appear-animation="fadeInLeft" data-appear-animation-delay="900" style="animation-delay: 90ms;">CONTACTO</h4>
+                        <h4 class="titulo2 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-appear-animation-delay="800" style="animation-delay: 800ms;"><strong>ABBOMAR</strong></h4>
+                        <p class="titulo3 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-appear-animation-delay="800" style="animation-delay: 800ms;">En nuestro taller de herrería, <strong class="strong1">Abbomar S.A.</strong>,
                                 tenemos como objetivo principal que los clientes 
                                 queden totalmente satisfechos con los productos que solicitan.</p><br>
 
@@ -91,8 +91,9 @@
                         
                     </div>
                     <div class="col-lg-6">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8291210561315!2d-58.58652678397617!3d-34.60848226525903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb84435d7d605%3A0x32b9038782d4fc4b!2sRa%C3%BAl%20Scalabrini%20Ortiz%202945%2C%20B1678IRG%20Caseros%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1589290961813!5m2!1ses-419!2sar"
-                        width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe class="appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-appear-animation-delay="800" style="animation-delay: 800ms;"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8291210561315!2d-58.58652678397617!3d-34.60848226525903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb84435d7d605%3A0x32b9038782d4fc4b!2sRa%C3%BAl%20Scalabrini%20Ortiz%202945%2C%20B1678IRG%20Caseros%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1589290961813!5m2!1ses-419!2sar"
+                        width="100%" height="500" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
                     </div>
                 </div>
@@ -163,7 +164,7 @@
                             $(".dropdown-content").slideToggle(); // Muestra u oculta el dropdown al hacer clic en "PRODUCTOS"
                         });
                     });
-                    $(document).ready(function() {
+    $(document).ready(function() {
     // Agrega las clases de animación a los elementos específicos
     $(".animate__animated").addClass("appear-animation-visible");
   });
