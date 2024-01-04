@@ -279,18 +279,32 @@
       </div>
       </footer>
   
-
 <!-- JavaScript requerido por Bootstrap 4 (opcional) -->
 <script>
 
-  
+function toggleDropdown() {
+  var dropdown = document.getElementById("myDropdown");
+  dropdown.classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown-toggle')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}  
+
   // JavaScript para cambiar la clase del encabezado al hacer scroll
   window.addEventListener('scroll', function () {
       var header = document.querySelector('header');
       header.classList.toggle('scrolled', window.scrollY > 0);
   });
-
-
 
 const carrusel = document.querySelector('.carrusel');
 const logos = document.querySelector('.logos');
@@ -306,8 +320,9 @@ botonAnterior.addEventListener('click', () => {
   avanzarCarrusel(paso);
 });
 
-botonSiguiente.addEventListener('click', () => {
+botonSiguiente.addEventListener('click', (event) => {
   retrocederCarrusel(paso);
+  event.stopPropagation(); // Detiene la propagación del evento
 });
 
 function avanzarCarrusel(paso) {
@@ -364,10 +379,10 @@ botonAnterior2.addEventListener('click', () => {
   avanzarCarrusel2(paso2);
 });
 
-botonSiguiente2.addEventListener('click', () => {
-  retrocederCarrusel2(paso2);
+botonSiguiente2.addEventListener('click', (event) => {
+  retrocederCarrusel2(paso);
+  event.stopPropagation(); // Detiene la propagación del evento
 });
-
 function avanzarCarrusel2(paso) {
   posicion2 += paso;
   posicion2 = Math.min(posicion2, 0);
@@ -408,8 +423,6 @@ function verificarCambiarDireccion2() {
 
 avanzarAutomaticamente2(); // Iniciar el avance automático para el segundo carrusel
 
-
-
 </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -426,8 +439,6 @@ document.getElementById('ymas').addEventListener('click', function() {
     });
 });
 
-
-
   $(document).ready(function() {
     $(".hamburger-btn").click(function() {
       $("nav").slideToggle(); // Muestra u oculta el menú desplegable al hacer clic en el botón hamburguesa
@@ -439,26 +450,6 @@ document.getElementById('ymas').addEventListener('click', function() {
             $(".dropdown-content").slideToggle(); // Muestra u oculta el dropdown al hacer clic en "PRODUCTOS"
         });
     });
-
-    function toggleDropdown() {
-  var dropdown = document.getElementById("myDropdown");
-  dropdown.classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropdown-toggle')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-
 </script>
 </body>
 </html>
