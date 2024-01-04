@@ -255,7 +255,7 @@ nav {
   }
 
   .equipamiento-otros {
-    padding-top: 6em;
+    padding-top: 7em;
     font-size: 2em; /* Tamaño del texto más grande */
     margin-bottom: 10px; /* Espaciado inferior */
   }
@@ -1123,6 +1123,20 @@ nav ul li a {
   .ourclients {
     margin-top: 1.5em;
     width:100%;
+  }
+
+  .equipamiento-otros {
+    padding-top: 6em;
+    font-size: 1.5em; /* Tamaño del texto más grande */
+    margin-bottom: 10px; /* Espaciado inferior */
+    line-height: 1.5em;
+  }
+
+  .portaequipajes-y-portaescaleras {
+    padding-top: 7em;
+    font-size: 1.5em; /* Tamaño del texto más grande */
+    margin-bottom: 10px; /* Espaciado inferior */
+
   }
 
   .experteanos .nav {
