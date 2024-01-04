@@ -12,37 +12,33 @@
 <body>
   
 <header>
-    <h1 class="d-none">Abbomar Herrería en Caseros Portaequipajes y Portaescaleras</h1>
-      <button class="hamburger-btn">&#9776;</button>
-    
-      <a href="#" > 
-        <img id="logo" src="img/abbomar.png" alt="Abbomar">
-      </a>
+  <h1 class="d-none">Abbomar Herrería en Caseros Portaequipajes y Portaescaleras</h1>
+  <button class="hamburger-btn" onclick="toggleDropdown()">&#9776;</button>
+  <a href="#">
+    <img id="logo" src="img/abbomar.png" alt="Abbomar">
+  </a>
 
-    
-      <nav>
-        <ul>
-          <li><a href="index.html">INICIO</a></li>
-          <li class="dropdown dropdown-container">
-            <a href="#" class="dropbtn">PRODUCTOS</a>
-          
-            <div class="dropdown-content">
-              <a href="portaequipajes.html">Portaequipajes y Portaescaleras</a>
-              <a href="equipamiento-interior.html">Equipamiento interior</a>
-              <a href="equipamiento-interior.html">Otros</a>
-            </div>
-         
-          </li>
-          <li><a href="contacto.html">CONTACTO</a></li>
-        </ul>
-      </nav>
-      <div class="icon-buttons">
-        <a href="tel:+541151013019"><img src="img/iconos/telefono.png" alt="Telefono"></a>
-        <a href="https://www.facebook.com/marcelo.abbondandolo.7"><img src="img/iconos/facebook.png" alt="Facebook"></a>
-        <a href="https://wa.me/5491151013019" target="_blank"><img src="img/iconos/whatsapp.png" alt="WhatsApp"></a>
-      </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">INICIO</a></li>
+      <li class="dropdown dropdown-container">
+        <a class="dropbtn dropdown-toggle font1" onclick="toggleDropdown()" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">PRODUCTOS</a>
       
-      <!-- Botones adicionales con iconos -->
+        <div class="dropdown-content dropdown-menu" id="myDropdown">
+          <a href="portaequipajes.html" class="dropdown-item">Portaequipajes y Portaescaleras</a>
+          <a href="equipamiento-interior.html" class="dropdown-item">Equipamiento interior</a>
+          <a href="otros.html" class="dropdown-item">Otros</a>
+        </div>
+     
+      </li>
+      <li><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+  </nav>
+  <div class="icon-buttons">
+    <a href="tel:+541151013019"><img src="img/iconos/telefono.png" alt="Telefono"></a>
+    <a href="https://www.facebook.com/marcelo.abbondandolo.7"><img src="img/iconos/facebook.png" alt="Facebook"></a>
+    <a href="https://wa.me/5491151013019" target="_blank"><img src="img/iconos/whatsapp.png" alt="WhatsApp"></a>
+  </div>
 </header>
 
 <a href="https://wa.me/5491151013019" target="_blank" class="whatsapp-btn">
@@ -56,7 +52,6 @@
                   <a id="ymas" class="fondo3 titulo4">Y MÁS</a>
               </div>
           </div>
-          <div class="tp-caption rs-toggle-content-active" style="left: -5px; background-color: rgb(255, 255, 255); visibility: visible; transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 150px; min-width: 105%; max-height: 150px; max-width: 105%; opacity: 1; transform: matrix(0.99862, -0.05233, 0, 1, 0, 0);" data-frames="[{&quot;delay&quot;:0,&quot;from&quot;:&quot;skY:-3deg;&quot;,&quot;to&quot;:&quot;o:1&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-x="center" data-y="bottom" data-voffset="-80" data-height="['150']" data-width="105%" data-basealign="slide" id="layer-105457196"></div>
       </div>
 
       <div>  <!--id q no se esta usando! -->
@@ -91,7 +86,7 @@
    
       <section id="targetSection">
             <div class="col">
-							<h2 class="font-weight-normal mt-4">Nos dedicamos a la <strong class="strong1 titulo5">fabricación de</strong></h2>
+							<h2 class="mt-4">Nos dedicamos a la <strong class="strong1 titulo5">fabricación de</strong></h2>
 						</div>
             <article class="article3">
             
@@ -111,7 +106,7 @@
                       
               </div>
               <div class="card">
-                <a href="portaequipajes.html"> <img class="card-img-top" src="img/equipamiento-vahiculos.jpg" alt="Descripción 1">
+                <a href="equipamiento-interior.html"> <img class="card-img-top" src="img/equipamiento-vahiculos.jpg" alt="Descripción 1">
                 <h3 class="titulo2 ">Equipamiento Interior</h3>
                 <h4 class="titulo4 fondo6 botones">Ver más</h4> </a>
   
@@ -119,17 +114,17 @@
 
              
               <div class="card">
-                <a href="portaequipajes.html">      <img class="card-img-top" src="img/trailers-portabobinas.jpg" alt="Descripción 2">
+                <a href="equipamiento-interior.html">      <img class="card-img-top" src="img/trailers-portabobinas.jpg" alt="Descripción 2">
                       <h3 class="titulo2 ">Trailer Portabobina</h3>
                       <h4 class="titulo4 fondo6 botones">Ver más</h4> </a>
               </div>
               <div class="card">
-                <a href="portaequipajes.html">   <img class="card-img-top" src="img/carrete-portabobina.png" alt="Descripción 2">
+                <a href="equipamiento-interior.html">   <img class="card-img-top" src="img/carrete-portabobina.png" alt="Descripción 2">
                 <h3 class="titulo2 ">Carrete Portabobina</h3>
                 <h4 class="titulo4 fondo6 botones">Ver más</h4> </a>
               </div>
               <div class="card">
-                <a href="portaequipajes.html"> <img class="card-img-top" src="img//cruz-de-ganancia.png" alt="Descripción 2">
+                <a href="equipamiento-interior.html"> <img class="card-img-top" src="img//cruz-de-ganancia.png" alt="Descripción 2">
                 <h3 class="titulo2 ">Cruz de Ganancia</h3>
                 <h4 class="titulo4 fondo6 botones">Ver más</h4> </a>
               </div>
@@ -139,74 +134,50 @@
             <section class="nuestrosproductos">
               <div class="container">
                 <div class="row">
-                  <div class="col-lg-4 appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" style="animation-delay: 100ms;">
-                    <h2 class="font-weight-normal line-heigh-3 mb-4 titulo1 "> NUESTROS PRODUCTOS LO LLEVAN <strong class="strong1">EMPRESAS DE</strong></h2>
+                  <div class="col-lg-4">
+                    <h2 class="mb-4 titulo1 "> NUESTROS PRODUCTOS LO LLEVAN <strong class="strong1">EMPRESAS DE</strong></h2>
                     
                     
                   </div>
-                  <div class="col-lg-8 mt-5 mt-lg-0">
+                  <div class="col-lg-8 mt-4">
                     <div class="row">
-                      <div class="col-lg-6 mb-4 mb-lg-5 appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="animation-delay: 200ms;">
+                      <div class="col-lg-6">
                         <div class="feature-box feature-box-style-2">
                           <div class="feature-box-icon">
-                            <picture>
-                              
-                              <img class="tic" alt="tic" src="img/iconos/tic_rojo.png">
-                            </picture>
-                            <h4 class="font-weight-bold mb-2">CABLE</h4>
-                          </div>
-                          <div class="feature-box-info">
-                            
-                          
+                            <picture><img class="tic" alt="tic" src="img/iconos/tic_rojo.png"> </picture>
+                            <h4 class="mb-2">CABLE</h4>
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-6 mb-4 mb-lg-5 appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;">
+                      <div class="col-lg-6 ">
                         <div class="feature-box feature-box-style-2">
                           <div class="feature-box-icon">
-                            <picture>
-                            
-                              <img class="tic" alt="tic" src="img/iconos/tic_rojo.png">
-                            </picture>
-                            <h4 class="font-weight-bold mb-2 ">TELECOMUNICACIONES</h4>
+                            <picture><img class="tic" alt="tic" src="img/iconos/tic_rojo.png"> </picture>
+                            <h4 class="mb-2 ">TELECOMUNICACIONES</h4>
                           </div>
-                          <div class="feature-box-info">
-                           
-                            
-                          </div>
+                        
                         </div>
                       </div>
                     </div>
       
                     <div class="row">
-                      <div class="col-lg-6 mb-4 mb-lg-0">
-                        <div class="feature-box feature-box-style-2 appear-animation animated fadeInLeftShorter appear-animation-visible" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="800" style="animation-delay: 800ms;">
+                      <div class="col-lg-6">
+                        <div class="feature-box feature-box-style-2">
                           <div class="feature-box-icon">
-                            <picture>
-                         
-                              <img class="tic" alt="tic" src="img/iconos/tic_rojo.png">
-                            </picture>
-                            <h4 class="font-weight-bold mb-2">ENERGIA ELECTRICA</h4>
-                          </div>
-                          <div class="feature-box-info">
-                         
-                            
+                            <picture> <img class="tic" alt="tic" src="img/iconos/tic_rojo.png"> </picture>
+                            <h4 class="mb-2">ENERGIA ELECTRICA</h4>
                           </div>
                         </div>
                       </div>
                       
                       <div class="col-lg-6">
-                        <div class="feature-box feature-box-style-2 appear-animation animated fadeInLeftShorter appear-animation-visible" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600" style="animation-delay: 600ms;">
+                        <div class="feature-box feature-box-style-2">
                           <div class="feature-box-icon">
                             <picture>
                               
                               <img class="tic" alt="tic" src="img/iconos/tic_rojo.png">
                             </picture>   
-                            <h4 class="font-weight-bold mb-2">MANTENIMENTOS VARIOS, ETC</h4>
-                          </div>
-                          <div class="feature-box-info">
-                      
-                            
+                            <h4 class="mb-2">MANTENIMENTOS VARIOS, ETC</h4>
                           </div>
                         </div>
                       </div>
@@ -257,7 +228,7 @@
       <section class=" taller">
           <div class="row">
             <div class="col-xl taller-contenedor">
-              <h2 class="titulo4 mt-3 font-weight-bold">En nuestro taller de herrería, Abbomar S.A.</h2>
+              <h2 class="titulo4 mt-3">En nuestro taller de herrería, Abbomar S.A.</h2>
               <p class="titulo4">Tenemos como objetivo principal que los clientes queden totalmente satisfechos
                 con los productos que solicitan.</p>
                 <a href="https://wa.me/5491151013019" target="_blank" class="titulo4 button boton-contactar"> <img src="img/iconos/whatsapp-xxl.png" alt="contactar whatsapp"> Contactar</a>
@@ -277,35 +248,32 @@
     <footer id="footer" style="margin-top:0px">
       <div class="container my-4 tdfooter">
         <div class="row pt-5 py-lg-5">
-          <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0 footer1">
+          <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
                      
                       
-            <h5 class="text-6 text-transform-none font-weight-800 text-color-light mb-4"> <img class="ubi" src="img/iconos/ubicacion.png" style="font-size:20px" alt="direccion"> Dirección</h5>
-            <p class="text-4 mb-0 text-color-light"> Scalabrini Ortiz 2945
-Caseros BUENOS AIRES 1678</p>
+            <h5 class="text-6 mb-4"> <img class="ubi" src="img/iconos/ubicacion.png" alt="direccion"> Dirección</h5>
+            <p class="text-4"> Scalabrini Ortiz 2945 Caseros BUENOS AIRES 1678</p>
           </div>
-          <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0 footer2">
+          <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
                       
-            <h5 class="text-6 text-transform-none font-weight-800 text-color-light mb-4">  <img class="horario" src="img/iconos/reloj.png" style="font-size:20px" alt="horario"> Horario de Atención</h5>
-                          <p class="text-4 mb-0 textofooter"><strong>Lunes a Viernes:</strong><br>
-<span class="text-color-light"> de 07:00 a 16:00 hs.</span></p>
+            <h5 class= "mb-4">  <img class="horario titulo3" src="img/iconos/reloj.png" alt="horario"> Horario de Atención</h5>
+                                <p class="text-4">
+                                <strong class=" textofooter">Lunes a Viernes:</strong><br> de 07:00 a 16:00 hs.</p>
                          
           </div>
-          <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0 footer3">
+          <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
                       
                         
-            <h5 class="text-6 text-transform-none font-weight-800 text-color-light mb-4">  <img class="llamanos" src="img/iconos/telefono.png" style="font-size:20px" alt="llamada"> Llamanos</h5>
-                         
-            <a href="tel:+541151013019" target="_blank"><p class="text-7 text-color-light font-weight-light mb-2"><strong>11 5101 3019</strong></p></a> 
-            <a href="tel:+541148439243" target="_blank"><p class="text-4 mb-0 textofooter"><strong>Tel.:</strong>  <span class="text-color-light"> (011) 4843-9243</span></p></a>
-                          
-                         <a href="tel:+541173966108" target="_blank"> <p class="text-4 mb-0 textofooter"><strong>Tel.o: </strong> <span class="text-color-light"> (011)  7396 6108</span></p></a>
+            <h5 class="text-6 mb-4">  <img class="llamanos" src="img/iconos/telefono.png"alt="llamada"> Llamanos</h5>             
+            <a href="tel:+541151013019" class="lcdtm" target="_blank"><p class="lcdtm titulo3">11 5101 3019</p></a> 
+            <a href="tel:+541148439243" class="lcdtm" target="_blank"><p class="lcdtm titulo4"><strong class="textofooter">Tel.:</strong>  (011) 4843-9243</p></a>
+            <a href="tel:+541173966108" class="lcdtm" target="_blank"><p class="lcdtm titulo4"><strong class=" textofooter">Tel.o: </strong> (011)  7396 6108</p></a>
           </div>
-          <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0 footer4">
+          <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
            
                         
-            <h5 class="text-6 text-transform-none font-weight-800 text-color-light mb-4"> <img class="email" src="img/iconos/mail.png" style="font-size:20px" alt="email"> Email</h5>
-                        <a href="mailto:abbomar.abbomar@gmail.com" target="_blank">  <p class="text-4 mb-0"><span class="text-color-light"> abbomar.abbomar@gmail.com</span></p></a>
+            <h5 class="text-6 mb-4"> <img class="email" src="img/iconos/mail.png" alt="email"> Email</h5>
+                        <a href="mailto:abbomar.abbomar@gmail.com" target="_blank" class="lcdtm">  <p class="titulo4"> abbomar.abbomar@gmail.com</p></a>
           </div>
         </div>
       </div>
@@ -314,6 +282,8 @@ Caseros BUENOS AIRES 1678</p>
 
 <!-- JavaScript requerido por Bootstrap 4 (opcional) -->
 <script>
+
+  
   // JavaScript para cambiar la clase del encabezado al hacer scroll
   window.addEventListener('scroll', function () {
       var header = document.querySelector('header');
@@ -469,6 +439,26 @@ document.getElementById('ymas').addEventListener('click', function() {
             $(".dropdown-content").slideToggle(); // Muestra u oculta el dropdown al hacer clic en "PRODUCTOS"
         });
     });
+
+    function toggleDropdown() {
+  var dropdown = document.getElementById("myDropdown");
+  dropdown.classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown-toggle')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
 </script>
 </body>
 </html>

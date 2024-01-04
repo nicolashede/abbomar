@@ -13,37 +13,33 @@
   
     <header>
         <h1 class="d-none">Abbomar Herrería en Caseros Portaequipajes y Portaescaleras</h1>
-          <button class="hamburger-btn">&#9776;</button>
-        
-          <a href="#" > 
-            <img id="logo" src="img/abbomar.png" alt="Abbomar">
-          </a>
-    
-        
-          <nav>
-            <ul>
-              <li><a href="index.html">INICIO</a></li>
-              <li class="dropdown dropdown-container">
-                <a href="#" class="dropbtn">PRODUCTOS</a>
-              
-                <div class="dropdown-content">
-                  <a href="portaequipajes.html">Portaequipajes y Portaescaleras</a>
-                  <a href="equipamiento-interior.html">Equipamiento interior</a>
-                  <a href="equipamiento-interior.html">Otros</a>
-                </div>
-             
-              </li>
-              <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-          </nav>
-          <div class="icon-buttons">
-            <a href="tel:+541151013019"><img src="img/iconos/telefono.png" alt="Telefono"></a>
-            <a href="https://www.facebook.com/marcelo.abbondandolo.7"><img src="img/iconos/facebook.png" alt="Facebook"></a>
-            <a href="https://wa.me/5491151013019" target="_blank"><img src="img/iconos/whatsapp.png" alt="WhatsApp"></a>
-          </div>
-          
-          <!-- Botones adicionales con iconos -->
-    </header>
+        <button class="hamburger-btn" onclick="toggleDropdown()">&#9776;</button>
+        <a href="index.html">
+          <img id="logo" src="img/abbomar.png" alt="Abbomar">
+        </a>
+      
+        <nav>
+          <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li class="dropdown dropdown-container">
+              <a class="dropbtn dropdown-toggle font1" onclick="toggleDropdown()" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">PRODUCTOS</a>
+            
+              <div class="dropdown-content dropdown-menu" id="myDropdown">
+                <a href="portaequipajes.html" class="dropdown-item">Portaequipajes y Portaescaleras</a>
+                <a href="equipamiento-interior.html" class="dropdown-item">Equipamiento interior</a>
+                <a href="otros.html" class="dropdown-item">Otros</a>
+              </div>
+           
+            </li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="icon-buttons">
+          <a href="tel:+541151013019"><img src="img/iconos/telefono.png" alt="Telefono"></a>
+          <a href="https://www.facebook.com/marcelo.abbondandolo.7"><img src="img/iconos/facebook.png" alt="Facebook"></a>
+          <a href="https://wa.me/5491151013019" target="_blank"><img src="img/iconos/whatsapp.png" alt="WhatsApp"></a>
+        </div>
+      </header>
 
     <a href="https://wa.me/5491151013019" target="_blank" class="whatsapp-btn">
         <img src="img/iconos/whatsapp-xxl.png" alt="WhatsApp">
@@ -63,8 +59,6 @@
             demandas del mundo actual.</p>
          <p class="texto2">En nuestra herrería trabajamos con esfuerzo y dedicación para brindar una esmerada atención.</p>
         </div>
-        <a href="https://api.whatsapp.com/send?phone=541151013019" target="_blank" class="mt-1 botonwsp">
-            <img src="img/iconos/whatsapp-xxl.png" alt="."> WHATSAPP</a>
         </article>
         <h2 style="text-align: center;" class="titulo2 font3 mt-5 mb-5">Nos adaptamos a <span class="font2 titulo1">cualquier medida</span> para cada tipo vehículo</h2>
         <div class="experteanos" style="cursor: pointer;">
@@ -348,41 +342,38 @@ style=" background:#CCC" id="portaescaleras4">
 </div>
 </footer>
 <footer id="footer" style="margin-top:0px">
-<div class="container my-4 tdfooter">
-  <div class="row pt-5 py-lg-5">
-    <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0 footer1">
-               
-                
-      <h5 class="text-6 text-transform-none font-weight-800 text-color-light mb-4"> <img class="ubi" src="img/iconos/ubicacion.png" style="font-size:20px" alt="direccion"> Dirección</h5>
-      <p class="text-4 mb-0 text-color-light"> Scalabrini Ortiz 2945
-Caseros BUENOS AIRES 1678</p>
-    </div>
-    <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0 footer2">
-                
-      <h5 class="text-6 text-transform-none font-weight-800 text-color-light mb-4">  <img class="horario" src="img/iconos/reloj.png" style="font-size:20px" alt="horario"> Horario de Atención</h5>
-                    <p class="text-4 mb-0 textofooter"><strong>Lunes a Viernes:</strong><br>
-<span class="text-color-light"> de 07:00 a 16:00 hs.</span></p>
+    <div class="container my-4 tdfooter">
+      <div class="row pt-5 py-lg-5">
+        <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
                    
-    </div>
-    <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0 footer3">
-                
-                  
-      <h5 class="text-6 text-transform-none font-weight-800 text-color-light mb-4">  <img class="llamanos" src="img/iconos/telefono.png" style="font-size:20px" alt="llamada"> Llamanos</h5>
-                   
-      <a href="tel:+541151013019" target="_blank"><p class="text-7 text-color-light font-weight-light mb-2"><strong>11 5101 3019</strong></p></a> 
-      <a href="tel:+541148439243" target="_blank"><p class="text-4 mb-0 textofooter"><strong>Tel.:</strong>  <span class="text-color-light"> (011) 4843-9243</span></p></a>
                     
-                   <a href="tel:+541173966108" target="_blank"> <p class="text-4 mb-0 textofooter"><strong>Tel.o: </strong> <span class="text-color-light"> (011)  7396 6108</span></p></a>
+          <h5 class="text-6 mb-4"> <img class="ubi" src="img/iconos/ubicacion.png" alt="direccion"> Dirección</h5>
+          <p class="text-4"> Scalabrini Ortiz 2945 Caseros BUENOS AIRES 1678</p>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    
+          <h5 class= "mb-4">  <img class="horario titulo3" src="img/iconos/reloj.png" alt="horario"> Horario de Atención</h5>
+                              <p class="text-4">
+                              <strong class=" textofooter">Lunes a Viernes:</strong><br> de 07:00 a 16:00 hs.</p>
+                       
+        </div>
+        <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    
+                      
+          <h5 class="text-6 mb-4">  <img class="llamanos" src="img/iconos/telefono.png"alt="llamada"> Llamanos</h5>             
+          <a href="tel:+541151013019" class="lcdtm" target="_blank"><p class="lcdtm titulo3">11 5101 3019</p></a> 
+          <a href="tel:+541148439243" class="lcdtm" target="_blank"><p class="lcdtm titulo4"><strong class="textofooter">Tel.:</strong>  (011) 4843-9243</p></a>
+          <a href="tel:+541173966108" class="lcdtm" target="_blank"><p class="lcdtm titulo4"><strong class=" textofooter">Tel.o: </strong> (011)  7396 6108</p></a>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
+         
+                      
+          <h5 class="text-6 mb-4"> <img class="email" src="img/iconos/mail.png" alt="email"> Email</h5>
+                      <a href="mailto:abbomar.abbomar@gmail.com" target="_blank" class="lcdtm">  <p class="titulo4"> abbomar.abbomar@gmail.com</p></a>
+        </div>
+      </div>
     </div>
-    <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0 footer4">
-     
-                  
-      <h5 class="text-6 text-transform-none font-weight-800 text-color-light mb-4"> <img class="email" src="img/iconos/mail.png" style="font-size:20px" alt="email"> Email</h5>
-                  <a href="mailto:abbomar.abbomar@gmail.com" target="_blank">  <p class="text-4 mb-0"><span class="text-color-light"> abbomar.abbomar@gmail.com</span></p></a>
-    </div>
-  </div>
-</div>
-</footer>
+    </footer>
 <script>
 
 
@@ -560,6 +551,25 @@ setupGallery(gallery5, modal5, '.modal-image-5');
         });
     });
    
+
+    function toggleDropdown() {
+  var dropdown = document.getElementById("myDropdown");
+  dropdown.classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown-toggle')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
 </script>  
 
 
