@@ -743,11 +743,10 @@ margin-bottom: 10px;
 }
 
 .modal-content {
-  top: 100px;
+  top:14%;
   display: block;
   margin: auto;
   max-width: 50%;
- 
 }
 
 .modal-content img {
@@ -1136,10 +1135,63 @@ nav ul li a {
 @media screen and (max-width:480px){
   .ourclients {
     margin-top: 1.5em;
-    
     width:100%;
   }
+
+  .experteanos .nav {
+margin-bottom: 10px;
+  }
+
+ 
+
+  .modal-content {
+    top:35%;
+    max-width: 98%;
+    vertical-align: middle;
+  }
+
+  .prev,
+  .next {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 46%;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
   
+  }
+
+  .prev {
+    left: 0px;
+  }
+  
+  .next {
+    right: 0px;
+  }
+
+  .gallery-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+      width: 100%;
+      white-space: initial;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .gallery {
+      display: block;
+    }
+    
+    .gallery img {
+      max-width: 45%;
+      height: auto;
+      cursor: pointer;
+     
+      margin: 6px;
+    }
+
   .carrusel {
     position: relative;
     width: 100%; /* Ancho del carrusel */
@@ -1298,9 +1350,15 @@ display:none;
     margin:0px;
     justify-content: center;
     align-items: center;
-    padding: 0px;
-  
+    padding: 25px 10px;
   }
+  .article2 .botonwsp {
+position: relative;
+margin-left:33%;
+margin-right:33%;
+  }
+
+
   .titulo3{
    font-size: 1.4em!important;
   }
