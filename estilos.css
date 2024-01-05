@@ -243,13 +243,13 @@ nav {
 
     background-attachment: fixed;
     width: 100%;
-    max-height: 80vw;
-    height: 50vh;
+    max-height: 60vw;
+    height: 40vh;
     
   }
   
   .portaequipajes-y-portaescaleras {
-    padding-top: 7em;
+    padding-top: 6em;
     font-size: 2em; /* Tamaño del texto más grande */
     margin-bottom: 10px; /* Espaciado inferior */
   }
@@ -295,15 +295,33 @@ section{
 
 }
 .texto-logo2{
-width: 65%;
+  width: 65%;
+  box-sizing: border-box;
+  justify-content: center;
+  padding: 2em 3em;
+  
+  }
+.article2-porta{
+  display: flex;
+  background-color: #f2f2f2;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+}
+.texto-logo2-porta{
+width: 60%;
 box-sizing: border-box;
 justify-content: center;
-padding: 2em 3em;
 
 }
+.texto-logo2-porta .texto2{
+  padding-top: 0px;
+  margin-bottom: 5px;
+  }
 .logo2{
   padding: 2em;
   width: 35%;
+  
 
 }
 .logo2 img{
@@ -638,6 +656,9 @@ color: #ffffff;
 .titulo5{
 color: #f2b705;
 }
+.titulo6{
+  color: #e6b114;
+  }
 .strong1{
   font-family:papu;
 }
@@ -787,6 +808,10 @@ ul li{
 #ymas {
  cursor: pointer; 
 }
+.puto{
+  font-size: 1.6em;
+}
+  
 
 /*---------------------------------------------------MEDIA QUERY LAPTOP-----------------------------------------------------*/
 /*---------------------------------------------------MEDIA QUERY LAPTOP-----------------------------------------------------*/
@@ -851,6 +876,27 @@ ul li{
   align-items: center;
   
 }
+.article2-porta{
+  display: flex;
+  background-color: #f2f2f2;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+}
+.puto{
+  font-size: 1.5em!important;
+  margin-bottom: .6em;
+}
+.texto-logo2-porta{
+width: 75%;
+box-sizing: border-box;
+justify-content: center;
+
+}
+.texto-logo2-porta .texto2{
+  padding-top: 0px;
+  margin-bottom: 5px;
+  }
 .texto-logo2{
   width: 70%;
   box-sizing: border-box;
@@ -1452,7 +1498,29 @@ display:none;
 margin-left: 1%;
 margin-right: 1%;
   }
-
+  .article2-porta{
+    display: block;
+    padding: .2em;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  .puto{
+    font-size: 1.5em!important;
+    margin-bottom: .5em;
+  }
+  .texto-logo2-porta{
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  padding-left: 15px;
+  
+  }
+  .texto-logo2-porta .texto2{
+    padding-top: 0px;
+    margin-bottom: 5px;
+    }
 }
 /*--------------------------------------------------------------------------------------------------------------------------------------------- */
 
