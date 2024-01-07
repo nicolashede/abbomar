@@ -46,7 +46,7 @@
       </a>
             <div>
                 <div class="hero-text2">
-                    <h2 class="equipamiento-otros">Equipamiento de Interior, Cruz de Ganancia, Trailer y Carrete Portabobina</h2>
+                    <h2 class="equipamiento-otros" id="texto">Equipamiento de Interior, Cruz de Ganancia, Trailer y Carrete Portabobina</h2>
                 </div>
       
             </div>
@@ -85,6 +85,7 @@
 </div>
 
 <div id="myModal1" class="modal">
+  <span class="close">&times;</span>
     <span class="prev">&#10094;</span>
     <span class="next">&#10095;</span>
     <img class="modal-content modal-image-1" alt=".">
@@ -110,6 +111,7 @@ style=" background:#ffbc1c;" id="portaescaleras2">
 </div>
 
 <div id="myModal2" class="modal">
+  <span class="close">&times;</span>
     <span class="prev">&#10094;</span>
     <span class="next">&#10095;</span>
     <img class="modal-content modal-image-2" alt=".">
@@ -136,6 +138,7 @@ style=" background:#a12025" id="portaescaleras3">
 </div>
 
 <div id="myModal6" class="modal">
+  <span class="close">&times;</span>
     <span class="prev">&#10094;</span>
     <span class="next">&#10095;</span>
     <img class="modal-content modal-image-6" alt=".">
@@ -159,6 +162,7 @@ style=" background:#a12025" id="portaescaleras3">
 </div>
 
 <div id="myModal3" class="modal">
+  <span class="close">&times;</span>
     <span class="prev">&#10094;</span>
     <span class="next">&#10095;</span>
     <img class="modal-content modal-image-3" alt=".">
@@ -217,6 +221,28 @@ style=" background:#a12025" id="portaescaleras3">
     </div>
     </footer>
 <script>
+
+const textoAMostrar = "Equipamiento de Interior, Cruz de Ganancia, Trailer y Carrete Portabobina";
+
+function escribirConRetraso(texto, elemento, intervalo, retraso) {
+    elemento.innerHTML = ''; // Limpiar el contenido del elemento
+    let i = 0;
+    setTimeout(() => {
+        const escribir = setInterval(() => {
+            if (i <= texto.length) {
+                elemento.innerHTML = texto.substring(0, i);
+                i++;
+            } else {
+                clearInterval(escribir);
+            }
+        }, intervalo);
+    }, retraso);
+}
+
+window.onload = function() {
+    const textoElemento = document.getElementById('texto');
+    escribirConRetraso(textoAMostrar, textoElemento, 50, 0);
+};
 
 
 document.getElementById('btnequipamiento').addEventListener('click', function() {
@@ -389,6 +415,12 @@ window.onclick = function(event) {
   }
 }
 
+document.querySelectorAll('.modal .close').forEach(function(closeButton) {
+    closeButton.addEventListener('click', function() {
+        const modal = closeButton.closest('.modal');
+        modal.style.display = 'none'; // Oculta el modal al hacer clic en el botón "close"
+    });
+});
 </script>  
 
 
