@@ -21,10 +21,12 @@
     src: url('fonts/OpenSans-SemiBold.ttf') format('truetype');
     
   }
-  @keyframes animacion1{
+  @keyframes aparecer{
     0%{
         opacity: 0%;  
-    }
+    }20%{
+      opacity: 0%;  
+  }
     100%{
         opacity: 100%;
     }
@@ -123,8 +125,16 @@ nav {
     color: #f2b705;
   }
   
-  @keyframes tracking-in-expand{0%{letter-spacing:-.2em;opacity:0}40%{opacity:.6}100%{opacity:1}}
-  @keyframes blur-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+  @keyframes tracking-in-expand{0%{letter-spacing:.4em;opacity:0}40%{opacity:.3}100%{opacity:1}}
+  @keyframes blur-in{0%{filter:blur(30px);opacity:0}100%{filter:blur(0);opacity:1}}
+  @keyframes scale-down-center{0%{transform:scale(1.5)}100%{transform:scale(1)}}
+  @keyframes scale-pngs{0%{transform:scale(1)}50%{transform:scale(.98)}100%{transform:scale(1)}}
+  @keyframes slide-top{0%{transform:translateY(0)}
+                      50%{transform:translateY(-15%)}
+                      100%{transform:translateY(0)}}
+ 
+
+.tracking-in-expand-forward-top{animation:tracking-in-expand-forward-top 2.5s cubic-bezier(0.25, 0.1, 0.25, 1)} @keyframes tracking-in-expand-forward-top{0%{letter-spacing:.2em;transform:translateZ(700px) translateY(100px);opacity:0}20%{opacity:.6}100%{transform:translateZ(0) translateY(0);opacity:1}}
 
 .troll { 
   animation:blur-in 1.5s cubic-bezier(0.25, 0.1, 0.25, 1), tracking-in-expand 1s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -133,6 +143,20 @@ nav {
 .oculto {
   display: none;
 }
+
+.scale-down-center{
+  animation:scale-down-center 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); 
+} 
+.anim{
+  animation: scale-down-center 2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  animation-delay: 5s;
+}
+
+.aparecer{
+  animation:aparecer 2.5s cubic-bezier(0.25, 0.1, 0.25, 1); 
+
+} 
+
 
 /* Definición de la animación de desplazamiento hacia arriba */
 @keyframes fadeInUp {
@@ -188,6 +212,12 @@ nav {
   to { width: 100% }
 }
 
+
+.btnPortaescaleras:hover{
+  color: #a12025!important;
+  animation: slide-top .5s cubic-bezier(0.25, 0.1, 0.25, 1); 
+
+}
  .dropbtn{
     cursor: pointer;
     background-color: transparent;
@@ -322,20 +352,17 @@ nav {
     color: #ffffff; /* Color del texto */
     background: url('img/portaequipajes-portaescaleras-para-utilitarios.webp') no-repeat center center fixed;
     background-size: cover;
-
     background-attachment: fixed;
     width: 100%;
-    max-height: 60vw;
+    max-height: 52%;
     height: 40vh;
-    
   }
-  
   .portaequipajes-y-portaescaleras {
-    padding-top: 6em;
+    padding-top: 7em;
     font-size: 2em; /* Tamaño del texto más grande */
     margin-bottom: 10px; /* Espaciado inferior */
-  }
 
+  }
   .equipamiento-otros {
     padding-top: 7em;
     font-size: 2em; /* Tamaño del texto más grande */
@@ -806,6 +833,9 @@ margin-bottom: 10px;
   transform: scale(0.97); /* Ajusta el valor según el nivel de zoom deseado */
 
 }
+.pngs:hover{
+  animation: scale-pngs 0.8s cubic-bezier(0.25, 0.1, 0.25, 1); 
+}
 
 /* Estilos para el modal */
 .modal {
@@ -904,7 +934,8 @@ ul li{
 /*---------------------------------------------------MEDIA QUERY LAPTOP-----------------------------------------------------*/
 @media screen and (max-width:1366px){
   .hero-text{
-    height: 40em;
+    height: 50em;
+    max-height: 50em;
   }
   .hero-text .fabrica-de {
     padding-top: 5em;
@@ -923,7 +954,6 @@ ul li{
     padding: 1em 2em;
   }
   
-
   .article1{
     padding:3em;
   }
@@ -1255,15 +1285,15 @@ nav ul li a {
   }
 
   .equipamiento-otros {
-    padding-top: 6em;
-    font-size: 1.5em; /* Tamaño del texto más grande */
+    padding-top: 6.8em;
+    font-size: 1.7em; /* Tamaño del texto más grande */
     margin-bottom: 10px; /* Espaciado inferior */
     line-height: 1.5em;
   }
 
   .portaequipajes-y-portaescaleras {
     padding-top: 7em;
-    font-size: 1.5em; /* Tamaño del texto más grande */
+    font-size: 2.2em; /* Tamaño del texto más grande */
     margin-bottom: 10px; /* Espaciado inferior */
 
   }
@@ -1427,7 +1457,8 @@ display:none;
   }
 
   .hero-text{
-    height: 50em;
+    height: 70em;
+    max-height: 30em;
   }
   .hero-text .fabrica-de {
     padding-top: 5em;
@@ -1443,7 +1474,11 @@ display:none;
     font-size: .9em; /* Tamaño del texto más pequeño */
     margin:em;
     text-decoration: none;
-    padding: .9em 1.7em;
+    padding: .9em 2em;
+  }
+  .hero-text2 {
+    height: 42vh;
+    max-height: 25%;
   }
   .texto-logo2{
     font-size:.8em ;
@@ -1451,15 +1486,12 @@ display:none;
     width:100%;
     text-align: center;
   }
-
   .logo2{
     width: 100%;
   }
-
   section{
     width: 100%;
   }
-
   .article1{
     padding: 0 3em 0 2em;
     margin: 1.5em 0;
