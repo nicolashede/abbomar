@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
     <title>Abbomar - Herreria en caseros</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="animate.css"/>
     <!-- CSS de Bootstrap 4 -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="estilos.css">
@@ -22,8 +24,8 @@
     <ul>
       <li><a href="index.html">INICIO</a></li>
       <li class="dropdown dropdown-container">
-        <a class="dropbtn dropdown-toggle font1" onclick="toggleDropdown()" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">PRODUCTOS</a>
-      
+        <button type="button" class="dropbtn btn dropdown-toggle font1" onclick="toggleDropdown()" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">PRODUCTOS</button>
+  
         <div class="dropdown-content dropdown-menu" id="myDropdown">
           <a href="portaequipajes.html" class="dropdown-item">Portaequipajes y Portaescaleras</a>
           <a href="equipamiento-interior.html" class="dropdown-item">Equipamiento interior</a>
@@ -45,11 +47,11 @@
   <img src="img/iconos/whatsapp-xxl.png" alt="WhatsApp">
 </a>
       <div>
-          <div class="hero-text">
-              <h2 class="fabrica-de">FÁBRICA DE</h2>
-              <p>Portaescaleras, Portaequipajes, Interior de Vehículos...</p>
+          <div class="hero-text typewriter">
+              <h2 class="fabrica-de troll">FÁBRICA DE</h2>
+              <p id="texto">Portaescaleras, Portaequipajes, Interior de Vehículos...</p>
               <div>
-                  <a id="ymas" class="fondo3 titulo4">Y MÁS</a>
+                  <a id="ymas" class="fondo3 titulo4 oculto">Y MÁS</a>
               </div>
           </div>
       </div>
@@ -281,6 +283,36 @@
   
 <!-- JavaScript requerido por Bootstrap 4 (opcional) -->
 <script>
+
+const textoAMostrar = "Portaescaleras, Portaequipajes, Interior de Vehículos...";
+
+function escribirConRetraso(texto, elemento, intervalo, retraso) {
+    elemento.innerHTML = ''; // Limpiar el contenido del elemento
+    let i = 0;
+    setTimeout(() => {
+        const escribir = setInterval(() => {
+            if (i <= texto.length) {
+                elemento.innerHTML = texto.substring(0, i);
+                i++;
+            } else {
+                clearInterval(escribir);
+                mostrarEnlace();
+            }
+        }, intervalo);
+    }, retraso);
+}
+
+function mostrarEnlace() {
+    const enlaceYMas = document.getElementById('ymas');
+    enlaceYMas.classList.remove('oculto');
+    enlaceYMas.classList.add('slideInFromBottom');
+}
+
+window.onload = function() {
+    const textoElemento = document.getElementById('texto');
+    escribirConRetraso(textoAMostrar, textoElemento, 70, 1000);
+};
+
 
 function toggleDropdown() {
   var dropdown = document.getElementById("myDropdown");

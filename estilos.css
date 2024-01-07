@@ -108,7 +108,6 @@ nav {
   
   nav ul li {
     display: inline-block;
-    font-size: .8em;
   }
   
   nav ul li a {
@@ -116,17 +115,100 @@ nav {
     padding: 15px 10px;
     color: white;
     font-family: 'negrita', sans-serif;
+    font-size: .8em;
     
   }
   nav ul li a:hover {
     text-decoration: none;
-    color: #c18f16;
-    
+    color: #f2b705;
   }
   
- 
-  .dropbtn{
+  @keyframes tracking-in-expand{0%{letter-spacing:-.2em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+  @keyframes blur-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
+.troll { 
+  animation:blur-in 1.5s cubic-bezier(0.25, 0.1, 0.25, 1), tracking-in-expand 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.oculto {
+  display: none;
+}
+
+/* Definición de la animación de desplazamiento hacia arriba */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Definición de la animación de desplazamiento de abajo hacia arriba */
+@keyframes slideInFromBottom {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Aplica la animación al elemento que se mostrará */
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 1s; /* Duración de la animación */
+  animation-fill-mode: both;
+}
+
+/* Aplica la animación de abajo hacia arriba al enlace "Y MÁS" */
+.slideInFromBottom {
+  animation-name: slideInFromBottom;
+  animation-duration: 1s; /* Duración de la animación */
+  animation-fill-mode: both;
+}
+
+
+/* Estilo básico para la animación */
+.typewriter h1 {
+  overflow: hidden; /* Oculta el texto que aún no se ha mostrado */
+  white-space: nowrap; /* Evita saltos de línea */
+  margin: 0 auto; /* Centra el texto horizontalmente */
+  letter-spacing: .15em; /* Espaciado entre letras */
+  animation: typing 2s steps(40, end); /* Duración de la animación */
+}
+
+/* Animación de escribir */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+ .dropbtn{
     cursor: pointer;
+    background-color: transparent;
+    color:#ededed;
+    box-shadow: none;
+  }
+  
+  nav ul li button {
+    text-decoration: none;
+    padding: 15px 10px;
+    color: white;
+    font-family: 'negrita', sans-serif;
+    box-shadow: none;
+    font-size: .8em!important;
+  }
+  .btn:hover {
+    color: #f2b705;
+    
+  }
+  .btn:focus  {
+    box-shadow: none!important;
   }
   
   .dropdown-content {
@@ -717,6 +799,12 @@ margin-bottom: 10px;
   cursor: pointer;
   margin-right: 2px; /* Espacio entre imágenes */
   margin-left: 2px;
+  transition: transform 1s ease; /* Efecto de transición suave de 1 segundo */
+  transform-origin: center center; /* Punto de origen de la transformación */
+}
+.gallery img:hover {
+  transform: scale(0.97); /* Ajusta el valor según el nivel de zoom deseado */
+
 }
 
 /* Estilos para el modal */
@@ -811,14 +899,9 @@ ul li{
 .puto{
   font-size: 1.6em;
 }
-  
-
 /*---------------------------------------------------MEDIA QUERY LAPTOP-----------------------------------------------------*/
 /*---------------------------------------------------MEDIA QUERY LAPTOP-----------------------------------------------------*/
 /*---------------------------------------------------MEDIA QUERY LAPTOP-----------------------------------------------------*/
-
-
-
 @media screen and (max-width:1366px){
   .hero-text{
     height: 40em;
